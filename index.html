@@ -452,11 +452,11 @@
             <div class="header-content">
                 <div class="logo" onclick="showHome()">📊 Mobile Meter Reader</div>
                 <nav class="nav">
-                    <a onclick="showHome()">Home</a>
-                    <a onclick="showFeatures()">Features</a>
-                    <a onclick="showTutorial()">Tutorial</a>
-                    <a onclick="showFAQ()">FAQ</a>
-                    <a onclick="showSupport()">Support</a>
+                    <a onclick="showHome()" data-i18n="nav_home">Home</a>
+                    <a onclick="showFeatures()" data-i18n="nav_features">Features</a>
+                    <a onclick="showTutorial()" data-i18n="nav_tutorial">Tutorial</a>
+                    <a onclick="showFAQ()" data-i18n="nav_faq">FAQ</a>
+                    <a onclick="showSupport()" data-i18n="nav_support">Support</a>
                 </nav>
                 <div class="controls">
                     <button class="lang-switch" id="langBtn" onclick="toggleLanguage()">中文</button>
@@ -483,12 +483,7 @@
                     <p data-i18n="featureTrackingDesc">Easily record and track meter readings for multiple meters</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3 data-i18n="featureAnalysis">Data Analysis</h3>
-                    <p data-i18n="featureAnalysisDesc">AI-powered insights and usage analysis with Gemini</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📁</div>
+                    <div class="feature-icon"></div>
                     <h3 data-i18n="featureExport">Export & Backup</h3>
                     <p data-i18n="featureExportDesc">Export readings to Excel and create project backups</p>
                 </div>
@@ -513,7 +508,7 @@
         <!-- Features Section -->
         <section id="features" class="section">
             <div class="breadcrumb">
-                <a onclick="showHome()">Home</a> / <span data-i18n="features">Features</span>
+                <a onclick="showHome()" data-i18n="breadcrumb_home">Home</a> / <span data-i18n="features">Features</span>
             </div>
             <h2 data-i18n="features">Features</h2>
 
@@ -561,7 +556,7 @@
         <!-- Tutorial Section -->
         <section id="tutorial" class="section">
             <div class="breadcrumb">
-                <a onclick="showHome()">Home</a> / <span data-i18n="tutorial">Tutorial</span>
+                <a onclick="showHome()" data-i18n="breadcrumb_home">Home</a> / <span data-i18n="tutorial">Tutorial</span>
             </div>
             <h2 data-i18n="tutorial">Getting Started Guide</h2>
 
@@ -617,27 +612,27 @@
         <!-- FAQ Section -->
         <section id="faq" class="section">
             <div class="breadcrumb">
-                <a onclick="showHome()">Home</a> / <span data-i18n="faq">FAQ</span>
+                <a onclick="showHome()" data-i18n="breadcrumb_home">Home</a> / <span data-i18n="faq">FAQ</span>
             </div>
             <h2 data-i18n="frequentlyAsked">Frequently Asked Questions</h2>
 
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>Is my data secure and private?</h3>
+                        <h3 data-i18n="faqSecure">Is my data secure and private?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqSecureAnswer">
                         Yes, your data is completely secure. All data is stored locally on your device using your device's secure storage. We never upload your readings, meter information, or any personal data to any server. The app works entirely offline except when you choose to use AI analysis features (which requires an internet connection to communicate with Google Gemini).
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>How do I back up my data?</h3>
+                        <h3 data-i18n="faqBackup">How do I back up my data?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqBackupAnswer">
                         You can export your project data in two ways:<br>
                         1. <strong>Excel Export:</strong> Go to Project Details → Export Reading Data (exports as .xlsx)<br>
                         2. <strong>Project Backup:</strong> Go to Settings → Export Data (exports project configuration as JSON)<br>
@@ -647,20 +642,20 @@
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>Can I use the app offline?</h3>
+                        <h3 data-i18n="faqOffline">Can I use the app offline?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqOfflineAnswer">
                         Yes! The app works completely offline for recording readings, managing projects and meters, and viewing historical data. The only feature that requires internet is the AI-powered data analysis (Gemini integration), which you can optionally use when you have an internet connection.
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>How do I import a previously exported project?</h3>
+                        <h3 data-i18n="faqImport">How do I import a previously exported project?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqImportAnswer">
                         1. Go to the Project List (home screen)<br>
                         2. Tap the "Import Project" button<br>
                         3. Select the JSON backup file you saved earlier<br>
@@ -671,10 +666,10 @@
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>What is a "multiplier" and why do I need it?</h3>
+                        <h3 data-i18n="faqMultiplier">What is a "multiplier" and why do I need it?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqMultiplierAnswer">
                         Some meters display readings in units that need to be converted to standard units. For example:<br>
                         - Many water meters multiply by 1 (display liters directly)<br>
                         - Some electricity meters multiply by 40 (each unit = 40 kWh)<br>
@@ -684,10 +679,10 @@
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>How is the cost calculated?</h3>
+                        <h3 data-i18n="faqCost">How is the cost calculated?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqCostAnswer">
                         The cost is calculated as:<br>
                         <code>Cost = (Current Reading - Previous Reading) × Multiplier × Unit Price</code><br>
                         For example: (100 - 95) × 40 × $0.15 = $30<br>
@@ -697,10 +692,10 @@
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>Can I delete a reading by mistake?</h3>
+                        <h3 data-i18n="faqDelete">Can I delete a reading by mistake?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqDeleteAnswer">
                         If you accidentally delete a reading batch, you can restore it from your backup:<br>
                         1. Import your previously exported project file<br>
                         2. Choose to overwrite your current project<br>
@@ -711,20 +706,20 @@
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>Does the app support multiple languages?</h3>
+                        <h3 data-i18n="faqLanguage">Does the app support multiple languages?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqLanguageAnswer">
                         Yes! The app currently supports English and Simplified Chinese. You can change the language anytime in the app Settings. The app will remember your language preference.
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>What should I do if the app crashes?</h3>
+                        <h3 data-i18n="faqCrash">What should I do if the app crashes?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqCrashAnswer">
                         If the app crashes:<br>
                         1. Close and reopen the app<br>
                         2. If the problem persists, uninstall and reinstall the app<br>
@@ -735,10 +730,10 @@
 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <h3>Can I edit meter information after adding it?</h3>
+                        <h3 data-i18n="faqEdit">Can I edit meter information after adding it?</h3>
                         <span class="faq-toggle">▼</span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer" data-i18n="faqEditAnswer">
                         Yes! Go to Project Details → Manage Meters, then tap on any meter to edit its name, location, type, multiplier, or unit price. Changes will apply to future calculations but won't affect past readings (they retain snapshots of the meter configuration at the time they were recorded).
                     </div>
                 </div>
@@ -748,7 +743,7 @@
         <!-- Support Section -->
         <section id="support" class="section">
             <div class="breadcrumb">
-                <a onclick="showHome()">Home</a> / <span data-i18n="support">Support</span>
+                <a onclick="showHome()" data-i18n="breadcrumb_home">Home</a> / <span data-i18n="support">Support</span>
             </div>
             <h2 data-i18n="support">Support & Contact</h2>
 
@@ -796,7 +791,7 @@
                 </ul>
             </div>
 
-            <h3 style="margin-top: 40px; margin-bottom: 20px;">Get Help</h3>
+            <h3 style="margin-top: 40px; margin-bottom: 20px;" data-i18n="getHelp">Get Help</h3>
             <div class="contact-info">
                 <h3 data-i18n="contactUs">Contact Us</h3>
                 <p data-i18n="contactUsDesc">If you have questions or need additional support, please reach out:</p>
@@ -813,16 +808,14 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Mobile Meter Reader. All rights reserved.</p>
+                <p data-i18n="copyright">&copy; 2025 Mobile Meter Reader. All rights reserved.</p>
             </div>
             <div class="footer-links">
-                <a href="#" onclick="showPrivacy()">Privacy Policy</a>
-                <a href="#" onclick="showTerms()">Terms of Service</a>
-                <a href="mailto:manomaster@163.com">Contact</a>
+                <a href="#" onclick="showPrivacy()" data-i18n="privacyPolicy">Privacy Policy</a>
+                <a href="#" onclick="showTerms()" data-i18n="termsOfService">Terms of Service</a>
+                <a href="mailto:manomaster@163.com" data-i18n="contact">Contact</a>
             </div>
-            <p style="font-size: 12px; margin-top: 15px;">
-                Deployed on GitHub Pages • Version 1.0
-            </p>
+            <p style="font-size: 12px; margin-top: 15px;" data-i18n="footerVersion">Deployed on GitHub Pages • Version 1.0</p>
         </div>
     </footer>
 
@@ -830,6 +823,11 @@
         // Language translations
         const translations = {
             en: {
+                nav_home: "Home",
+                nav_features: "Features",
+                nav_tutorial: "Tutorial",
+                nav_faq: "FAQ",
+                nav_support: "Support",
                 heroSubtitle: "Professional meter reading management solution",
                 learnMore: "Learn More",
                 keyFeatures: "Key Features",
@@ -901,9 +899,46 @@
                 cantAddMeter: "Can't add a new meter",
                 cantExport: "Export button not working",
                 dataNotSave: "Data not saving",
-                aiNotWorking: "AI Analysis not available"
+                aiNotWorking: "AI Analysis not available",
+                breadcrumb_home: "Home",
+                privacyPolicy: "Privacy Policy",
+                termsOfService: "Terms of Service",
+                contact: "Contact",
+                copyright: "© 2025 Mobile Meter Reader. All rights reserved.",
+                footerVersion: "Deployed on GitHub Pages • Version 1.0",
+                faqSecure: "Is my data secure and private?",
+                faqSecureAnswer: "Yes, your data is completely secure. All data is stored locally on your device using your device's secure storage. We never upload your readings, meter information, or any personal data to any server. The app works entirely offline except when you choose to use AI analysis features (which requires an internet connection to communicate with Google Gemini).",
+                faqBackup: "How do I back up my data?",
+                faqBackupAnswer: "You can export your project data in two ways:<br>1. <strong>Excel Export:</strong> Go to Project Details → Export Reading Data (exports as .xlsx)<br>2. <strong>Project Backup:</strong> Go to Settings → Export Data (exports project configuration as JSON)<br>Save these files to your computer or cloud storage for safe backup.",
+                faqOffline: "Can I use the app offline?",
+                faqOfflineAnswer: "Yes! The app works completely offline for recording readings, managing projects and meters, and viewing historical data. The only feature that requires internet is the AI-powered data analysis (Gemini integration), which you can optionally use when you have an internet connection.",
+                faqImport: "How do I import a previously exported project?",
+                faqImportAnswer: "1. Go to the Project List (home screen)<br>2. Tap the \"Import Project\" button<br>3. Select the JSON backup file you saved earlier<br>4. The app will prompt you to confirm if it will create a new project or overwrite an existing one<br>5. Your data will be restored with all meters and readings",
+                faqMultiplier: "What is a \"multiplier\" and why do I need it?",
+                faqMultiplierAnswer: "Some meters display readings in units that need to be converted to standard units. For example:<br>- Many water meters multiply by 1 (display liters directly)<br>- Some electricity meters multiply by 40 (each unit = 40 kWh)<br>- The app uses this multiplier to calculate actual consumption: actual value = reading × multiplier",
+                faqCost: "How is the cost calculated?",
+                faqCostAnswer: "The cost is calculated as:<br><code>Cost = (Current Reading - Previous Reading) × Multiplier × Unit Price</code><br>For example: (100 - 95) × 40 × $0.15 = $30<br>You set the unit price when configuring each meter.",
+                faqDelete: "Can I delete a reading by mistake?",
+                faqDeleteAnswer: "If you accidentally delete a reading batch, you can restore it from your backup:<br>1. Import your previously exported project file<br>2. Choose to overwrite your current project<br><br>We recommend regularly exporting your data as backup to prevent accidental data loss.",
+                faqLanguage: "Does the app support multiple languages?",
+                faqLanguageAnswer: "Yes! The app currently supports English and Simplified Chinese. You can change the language anytime in the app Settings. The app will remember your language preference.",
+                faqCrash: "What should I do if the app crashes?",
+                faqCrashAnswer: "If the app crashes:<br>1. Close and reopen the app<br>2. If the problem persists, uninstall and reinstall the app<br>3. Your data is safe in the device storage and will be restored<br>4. If you continue to have issues, please contact us with details",
+                faqEdit: "Can I edit meter information after adding it?",
+                faqEditAnswer: "Yes! Go to Project Details → Manage Meters, then tap on any meter to edit its name, location, type, multiplier, or unit price. Changes will apply to future calculations but won't affect past readings (they retain snapshots of the meter configuration at the time they were recorded).",
+                breadcrumb_home: "Home",
+                privacyPolicy: "Privacy Policy",
+                termsOfService: "Terms of Service",
+                contact: "Contact",
+                copyright: "© 2025 Mobile Meter Reader. All rights reserved.",
+                footerVersion: "Deployed on GitHub Pages • Version 1.0"
             },
             zh: {
+                nav_home: "首页",
+                nav_features: "功能",
+                nav_tutorial: "教程",
+                nav_faq: "常见问题",
+                nav_support: "支持",
                 heroSubtitle: "专业的抄表管理解决方案",
                 learnMore: "了解更多",
                 keyFeatures: "主要功能",
@@ -999,7 +1034,39 @@
                 contactUs: "联系我们",
                 contactUsDesc: "如您有任何问题或需要支持，请联系我们：",
                 emailSupport: "电子邮件支持",
-                email: "邮箱："
+                email: "邮箱：",
+                breadcrumb_home: "首页",
+                privacyPolicy: "隐私政策",
+                termsOfService: "服务条款",
+                contact: "联系",
+                copyright: "© 2025 Mobile Meter Reader。版权所有。",
+                footerVersion: "部署在 GitHub Pages • 版本 1.0",
+                faqSecure: "我的数据安全私密吗？",
+                faqSecureAnswer: "是的，您的数据完全安全。所有数据都存储在您设备上使用设备的安全存储。我们永远不会将您的抄读、表计信息或任何个人数据上传到任何服务器。应用完全离线工作，除非您选择使用 AI 分析功能（这需要互联网连接来与 Google Gemini 通信）。",
+                faqBackup: "我如何备份我的数据？",
+                faqBackupAnswer: "您可以通过两种方式导出项目数据：<br>1. <strong>Excel 导出：</strong>转到项目详情 → 导出抄读数据（导出为 .xlsx）<br>2. <strong>项目备份：</strong>转到设置 → 导出数据（导出项目配置为 JSON）<br>将这些文件保存到您的计算机或云存储以进行安全备份。",
+                faqOffline: "我可以离线使用应用吗？",
+                faqOfflineAnswer: "可以！应用完全离线工作以记录抄读、管理项目和表计以及查看历史数据。唯一需要互联网的功能是 AI 驱动的数据分析（Gemini 集成），您可以在有互联网连接时选择使用。",
+                faqImport: "我如何导入之前导出的项目？",
+                faqImportAnswer: "1. 转到项目列表（主屏幕）<br>2. 点击\"导入项目\"按钮<br>3. 选择您之前保存的 JSON 备份文件<br>4. 应用将提示您确认是创建新项目还是覆盖现有项目<br>5. 您的数据将与所有表计和抄读一起恢复",
+                faqMultiplier: "什么是\"倍数\"为什么我需要它？",
+                faqMultiplierAnswer: "某些表计显示的读数需要转换为标准单位。例如：<br>- 许多水表乘以 1（直接显示升）<br>- 某些电表乘以 40（每单位 = 40 千瓦时）<br>- 应用使用这个倍数来计算实际消耗：实际值 = 读数 × 倍数",
+                faqCost: "费用如何计算？",
+                faqCostAnswer: "费用计算如下：<br><code>费用 = (当前读数 - 上次读数) × 倍数 × 单价</code><br>例如：(100 - 95) × 40 × $0.15 = $30<br>您在配置每个表计时设置单价。",
+                faqDelete: "我可以意外删除抄读吗？",
+                faqDeleteAnswer: "如果您意外删除了抄读批次，您可以从备份中恢复：<br>1. 导入您之前导出的项目文件<br>2. 选择覆盖您当前的项目<br><br>我们建议定期导出您的数据作为备份以防止意外数据丢失。",
+                faqLanguage: "应用支持多种语言吗？",
+                faqLanguageAnswer: "是的！应用目前支持英文和简体中文。您可以随时在应用设置中更改语言。应用会记住您的语言偏好。",
+                faqCrash: "如果应用崩溃我应该怎么办？",
+                faqCrashAnswer: "如果应用崩溃：<br>1. 关闭并重新打开应用<br>2. 如果问题仍然存在，卸载并重新安装应用<br>3. 您的数据在设备存储中是安全的并将被恢复<br>4. 如果您继续有问题，请与我们联系并提供详情",
+                faqEdit: "添加后我可以编辑表计信息吗？",
+                faqEditAnswer: "可以！转到项目详情 → 管理表计，然后点击任何表计来编辑其名称、位置、类型、倍数或单价。更改将应用于未来的计算，但不会影响过去的抄读（它们保留了抄读时的表计配置快照）。",
+                breadcrumb_home: "首页",
+                privacyPolicy: "隐私政策",
+                termsOfService: "服务条款",
+                contact: "联系",
+                copyright: "© 2025 Mobile Meter Reader. 版权所有。",
+                footerVersion: "部署在 GitHub Pages • 版本 1.0"
             }
         };
 
@@ -1033,11 +1100,17 @@
         }
 
         function showPrivacy() {
-            alert('Privacy Policy\n\nAll data is stored locally on your device. We do not collect, store, or transmit any personal information to external servers.');
+            const privacyText = currentLanguage === 'en' 
+                ? 'Privacy Policy\n\nAll data is stored locally on your device. We do not collect, store, or transmit any personal information to external servers.'
+                : '隐私政策\n\n所有数据都存储在您的设备上。我们不收集、存储或向外部服务器传输任何个人信息。';
+            alert(privacyText);
         }
 
         function showTerms() {
-            alert('Terms of Service\n\nMobile Meter Reader is provided as-is. Use at your own discretion.');
+            const termsText = currentLanguage === 'en'
+                ? 'Terms of Service\n\nMobile Meter Reader is provided as-is. Use at your own discretion.'
+                : '服务条款\n\nMobile Meter Reader 按原样提供。使用时请自行决定。';
+            alert(termsText);
         }
 
         function showSection(sectionId) {
