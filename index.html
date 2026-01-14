@@ -546,14 +546,7 @@
                 </ul>
             </div>
 
-            <div class="tutorial">
-                <h3>📊 <span data-i18n="aiAnalysis">AI-Powered Analysis</span></h3>
-                <ul>
-                    <li data-i18n="aiAnalysisDesc">Get instant insights using Google's Gemini AI</li>
-                    <li data-i18n="aiUsagePatterns">Understand usage patterns and trends</li>
-                    <li data-i18n="aiCostOptimization">Receive cost optimization recommendations</li>
-                </ul>
-            </div>
+
 
             <div class="tutorial">
                 <h3>📤 <span data-i18n="exportFeatures">Export & Sharing</span></h3>
@@ -759,70 +752,59 @@
             </div>
             <h2 data-i18n="support">Support & Contact</h2>
 
-            <h3 style="margin-top: 30px;">Common Issues & Solutions</h3>
+            <h3 style="margin-top: 30px;" data-i18n="commonIssues">Common Issues & Solutions</h3>
 
             <div class="tutorial">
                 <h3>❌ <span data-i18n="cantAddMeter">Can't add a new meter</span></h3>
                 <ol>
-                    <li>Make sure you have created a project first</li>
-                    <li>Check that you have entered all required fields (name, type, price)</li>
-                    <li>Try closing and reopening the app</li>
-                    <li>Ensure your device has enough storage space</li>
+                    <li data-i18n="cantAddMeterReason1">Make sure you have created a project first</li>
+                    <li data-i18n="cantAddMeterReason2">Check that you have entered all required fields (name, type, price)</li>
+                    <li data-i18n="cantAddMeterReason3">Try closing and reopening the app</li>
+                    <li data-i18n="cantAddMeterReason4">Ensure your device has enough storage space</li>
                 </ol>
             </div>
 
             <div class="tutorial">
                 <h3>❌ <span data-i18n="cantExport">Export button not working</span></h3>
                 <ol>
-                    <li>Make sure you have readings to export</li>
-                    <li>Check that your device has storage permission for downloads</li>
-                    <li>Try exporting a different project first</li>
-                    <li>Restart the app and try again</li>
+                    <li data-i18n="cantExportReason1">Make sure you have readings to export</li>
+                    <li data-i18n="cantExportReason2">Check that your device has storage permission for downloads</li>
+                    <li data-i18n="cantExportReason3">Try exporting a different project first</li>
+                    <li data-i18n="cantExportReason4">Restart the app and try again</li>
                 </ol>
             </div>
 
             <div class="tutorial">
                 <h3>❌ <span data-i18n="dataNotSave">Data not saving</span></h3>
                 <ol>
-                    <li>Ensure the app has local storage permissions</li>
-                    <li>Check that your device has adequate free storage</li>
-                    <li>Don't force-close the app while saving</li>
-                    <li>On iOS: Check Settings → Mobile Meter Reader → Local Network permissions</li>
-                    <li>On Android: Check Settings → Apps → Mobile Meter Reader → Storage permissions</li>
+                    <li data-i18n="dataNotSaveReason1">Ensure the app has local storage permissions</li>
+                    <li data-i18n="dataNotSaveReason2">Check that your device has adequate free storage</li>
+                    <li data-i18n="dataNotSaveReason3">Don't force-close the app while saving</li>
+                    <li data-i18n="dataNotSaveReason4">On iOS: Check Settings → Mobile Meter Reader → Local Network permissions</li>
+                    <li data-i18n="dataNotSaveReason5">On Android: Check Settings → Apps → Mobile Meter Reader → Storage permissions</li>
                 </ol>
             </div>
 
-            <div class="tutorial">
-                <h3>❌ <span data-i18n="aiNotWorking">AI Analysis not available</span></h3>
-                <ol>
-                    <li>Ensure you have an active internet connection</li>
-                    <li>Go to Settings → Add API Key and enter your Google Gemini API key</li>
-                    <li>Check that your API key is valid and has sufficient quota</li>
-                    <li>Wait a moment and try again (API may be temporarily unavailable)</li>
-                </ol>
-            </div>
 
             <div class="warning-box">
-                <strong>Important:</strong> If you encounter an issue not listed above, please contact support with details about:
+                <strong data-i18n="important">Important:</strong> <span data-i18n="importantDesc">If you encounter an issue not listed above, please contact support with details about:</span>
                 <ul>
-                    <li>Your device type and OS version</li>
-                    <li>App version number</li>
-                    <li>Steps to reproduce the issue</li>
-                    <li>Screenshots if applicable</li>
+                    <li data-i18n="importantDetail1">Your device type and OS version</li>
+                    <li data-i18n="importantDetail2">App version number</li>
+                    <li data-i18n="importantDetail3">Steps to reproduce the issue</li>
+                    <li data-i18n="importantDetail4">Screenshots if applicable</li>
                 </ul>
             </div>
 
             <h3 style="margin-top: 40px; margin-bottom: 20px;">Get Help</h3>
             <div class="contact-info">
-                <h3>Contact Us</h3>
-                <p>If you have questions or need additional support, please reach out:</p>
+                <h3 data-i18n="contactUs">Contact Us</h3>
+                <p data-i18n="contactUsDesc">If you have questions or need additional support, please reach out:</p>
                 <div class="contact-links">
-                    <a href="https://github.com/yourusername/mobile-meter-reader/issues" class="contact-link" target="_blank">GitHub Issues</a>
-                    <a href="mailto:support@example.com" class="contact-link">Email Support</a>
-                    <a href="https://github.com/yourusername/mobile-meter-reader" class="contact-link" target="_blank">GitHub Repository</a>
+                    <a href="mailto:manomaster@163.com" class="contact-link" data-i18n="emailSupport">Email Support</a>
                 </div>
                 <p style="margin-top: 20px; font-size: 14px;">
-                    <strong>Response time:</strong> We typically respond within 24-48 hours
+                    <strong data-i18n="email">Email:</strong> manomaster@163.com
                 </p>
             </div>
         </section>
@@ -836,8 +818,7 @@
             <div class="footer-links">
                 <a href="#" onclick="showPrivacy()">Privacy Policy</a>
                 <a href="#" onclick="showTerms()">Terms of Service</a>
-                <a href="https://github.com/yourusername/mobile-meter-reader" target="_blank">GitHub</a>
-                <a href="mailto:support@example.com">Contact</a>
+                <a href="mailto:manomaster@163.com">Contact</a>
             </div>
             <p style="font-size: 12px; margin-top: 15px;">
                 Deployed on GitHub Pages • Version 1.0
@@ -994,7 +975,31 @@
                 cantAddMeter: "无法添加新表计",
                 cantExport: "导出按钮无法正常工作",
                 dataNotSave: "数据未保存",
-                aiNotWorking: "AI 分析不可用"
+                commonIssues: "常见问题与解决方案",
+                cantAddMeterReason1: "确保您已创建项目",
+                cantAddMeterReason2: "检查您已填写所有必需字段（名称、类型、价格）",
+                cantAddMeterReason3: "尝试关闭并重新打开应用",
+                cantAddMeterReason4: "确保您的设备有足够的存储空间",
+                cantExportReason1: "确保您有抄读数据可导出",
+                cantExportReason2: "检查您的设备是否有下载权限",
+                cantExportReason3: "尝试导出不同的项目",
+                cantExportReason4: "重启应用并重试",
+                dataNotSaveReason1: "确保应用有本地存储权限",
+                dataNotSaveReason2: "检查设备是否有足够的可用存储空间",
+                dataNotSaveReason3: "保存时不要强制关闭应用",
+                dataNotSaveReason4: "在 iOS 上：检查设置 → Mobile Meter Reader → 本地网络权限",
+                dataNotSaveReason5: "在 Android 上：检查设置 → 应用 → Mobile Meter Reader → 存储权限",
+                important: "重要：",
+                importantDesc: "如果您遇到上面未列出的问题，请联系支持并提供以下详情：",
+                importantDetail1: "您的设备类型和操作系统版本",
+                importantDetail2: "应用版本号",
+                importantDetail3: "重现问题的步骤",
+                importantDetail4: "相关的截图（如适用）",
+                getHelp: "获取帮助",
+                contactUs: "联系我们",
+                contactUsDesc: "如您有任何问题或需要支持，请联系我们：",
+                emailSupport: "电子邮件支持",
+                email: "邮箱："
             }
         };
 
