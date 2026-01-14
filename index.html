@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mobile Meter Reader - Technical Support & Documentation">
+    <meta name="description" content="EasyMetr - Technical Support & Documentation">
     <meta name="keywords" content="meter reader, water meter, electricity meter, gas meter, reading tracker">
-    <title>Mobile Meter Reader - Support Center</title>
+    <title>EasyMetr - Support Center</title>
     <style>
         * {
             margin: 0;
@@ -450,7 +450,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo" onclick="showHome()">📊 Mobile Meter Reader</div>
+                <div class="logo" onclick="showHome()">📊 <span data-i18n="appName">EasyMetr</span></div>
                 <nav class="nav">
                     <a onclick="showHome()" data-i18n="nav_home">Home</a>
                     <a onclick="showFeatures()" data-i18n="nav_features">Features</a>
@@ -470,7 +470,7 @@
         <!-- Home Section -->
         <section id="home" class="section active">
             <div class="hero">
-                <h1>Mobile Meter Reader</h1>
+                <h1 data-i18n="appName">EasyMetr</h1>
                 <p data-i18n="heroSubtitle">Professional meter reading management solution</p>
                 <button class="cta-button" onclick="showFeatures()" data-i18n="learnMore">Learn More</button>
             </div>
@@ -483,7 +483,7 @@
                     <p data-i18n="featureTrackingDesc">Easily record and track meter readings for multiple meters</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon"></div>
+                    <div class="feature-icon">📤</div>
                     <h3 data-i18n="featureExport">Export & Backup</h3>
                     <p data-i18n="featureExportDesc">Export readings to Excel and create project backups</p>
                 </div>
@@ -808,14 +808,13 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p data-i18n="copyright">&copy; 2025 Mobile Meter Reader. All rights reserved.</p>
+                <p data-i18n="copyright">&copy; 2026 EasyMetr. All rights reserved.</p>
             </div>
             <div class="footer-links">
-                <a href="#" onclick="showPrivacy()" data-i18n="privacyPolicy">Privacy Policy</a>
-                <a href="#" onclick="showTerms()" data-i18n="termsOfService">Terms of Service</a>
+                <a href="#" onclick="openPrivacyPolicy()" data-i18n="privacyPolicy">Privacy Policy</a>
                 <a href="mailto:manomaster@163.com" data-i18n="contact">Contact</a>
             </div>
-            <p style="font-size: 12px; margin-top: 15px;" data-i18n="footerVersion">Deployed on GitHub Pages • Version 1.0</p>
+            <p style="font-size: 12px; margin-top: 15px;">Version 1.0</p>
         </div>
     </footer>
 
@@ -902,10 +901,9 @@
                 aiNotWorking: "AI Analysis not available",
                 breadcrumb_home: "Home",
                 privacyPolicy: "Privacy Policy",
-                termsOfService: "Terms of Service",
                 contact: "Contact",
-                copyright: "© 2025 Mobile Meter Reader. All rights reserved.",
-                footerVersion: "Deployed on GitHub Pages • Version 1.0",
+                copyright: "© 2026 EasyMetr. All rights reserved.",
+
                 faqSecure: "Is my data secure and private?",
                 faqSecureAnswer: "Yes, your data is completely secure. All data is stored locally on your device using your device's secure storage. We never upload your readings, meter information, or any personal data to any server. The app works entirely offline except when you choose to use AI analysis features (which requires an internet connection to communicate with Google Gemini).",
                 faqBackup: "How do I back up my data?",
@@ -926,6 +924,7 @@
                 faqCrashAnswer: "If the app crashes:<br>1. Close and reopen the app<br>2. If the problem persists, uninstall and reinstall the app<br>3. Your data is safe in the device storage and will be restored<br>4. If you continue to have issues, please contact us with details",
                 faqEdit: "Can I edit meter information after adding it?",
                 faqEditAnswer: "Yes! Go to Project Details → Manage Meters, then tap on any meter to edit its name, location, type, multiplier, or unit price. Changes will apply to future calculations but won't affect past readings (they retain snapshots of the meter configuration at the time they were recorded).",
+                appName: "EasyMetr",
                 breadcrumb_home: "Home",
                 privacyPolicy: "Privacy Policy",
                 termsOfService: "Terms of Service",
@@ -1037,10 +1036,8 @@
                 email: "邮箱：",
                 breadcrumb_home: "首页",
                 privacyPolicy: "隐私政策",
-                termsOfService: "服务条款",
                 contact: "联系",
-                copyright: "© 2025 Mobile Meter Reader。版权所有。",
-                footerVersion: "部署在 GitHub Pages • 版本 1.0",
+                copyright: "© 2026 易抄助手。版权所有。",
                 faqSecure: "我的数据安全私密吗？",
                 faqSecureAnswer: "是的，您的数据完全安全。所有数据都存储在您设备上使用设备的安全存储。我们永远不会将您的抄读、表计信息或任何个人数据上传到任何服务器。应用完全离线工作，除非您选择使用 AI 分析功能（这需要互联网连接来与 Google Gemini 通信）。",
                 faqBackup: "我如何备份我的数据？",
@@ -1061,12 +1058,11 @@
                 faqCrashAnswer: "如果应用崩溃：<br>1. 关闭并重新打开应用<br>2. 如果问题仍然存在，卸载并重新安装应用<br>3. 您的数据在设备存储中是安全的并将被恢复<br>4. 如果您继续有问题，请与我们联系并提供详情",
                 faqEdit: "添加后我可以编辑表计信息吗？",
                 faqEditAnswer: "可以！转到项目详情 → 管理表计，然后点击任何表计来编辑其名称、位置、类型、倍数或单价。更改将应用于未来的计算，但不会影响过去的抄读（它们保留了抄读时的表计配置快照）。",
+                appName: "易抄助手",
                 breadcrumb_home: "首页",
                 privacyPolicy: "隐私政策",
-                termsOfService: "服务条款",
                 contact: "联系",
-                copyright: "© 2025 Mobile Meter Reader. 版权所有。",
-                footerVersion: "部署在 GitHub Pages • 版本 1.0"
+                copyright: "© 2026 Mobile Meter Reader. 版权所有。"
             }
         };
 
@@ -1099,18 +1095,11 @@
             showSection('support');
         }
 
-        function showPrivacy() {
-            const privacyText = currentLanguage === 'en' 
-                ? 'Privacy Policy\n\nAll data is stored locally on your device. We do not collect, store, or transmit any personal information to external servers.'
-                : '隐私政策\n\n所有数据都存储在您的设备上。我们不收集、存储或向外部服务器传输任何个人信息。';
-            alert(privacyText);
-        }
-
-        function showTerms() {
-            const termsText = currentLanguage === 'en'
-                ? 'Terms of Service\n\nMobile Meter Reader is provided as-is. Use at your own discretion.'
-                : '服务条款\n\nMobile Meter Reader 按原样提供。使用时请自行决定。';
-            alert(termsText);
+        function openPrivacyPolicy() {
+            const privacyUrl = currentLanguage === 'en'
+                ? 'https://cdxawesome.github.io/EasyMeter_PrivacyPolicy_en/'
+                : 'https://cdxawesome.github.io/EasyMeter_PrivacyPolicy_zh/';
+            window.open(privacyUrl, '_blank');
         }
 
         function showSection(sectionId) {
@@ -1158,7 +1147,7 @@
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (translations[currentLanguage] && translations[currentLanguage][key]) {
-                    el.textContent = translations[currentLanguage][key];
+                    el.innerHTML = translations[currentLanguage][key];
                 }
             });
         }
